@@ -45,7 +45,7 @@ export const Actuality = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <p className="text-font-100 text-[13px] lg:text-[15px] md:mt-5 mt-2.5 uppercase cursor-pointer">
-                  Lire l'article +
+                  Lire l&apos;article +
                 </p>
               </Link>
             </div>

@@ -39,7 +39,7 @@ export const Main = () => {
     {
       title: "Disponibilité",
       choices: [
-        "Aujourd'hui",
+        "Aujourd&apos;hui",
         "Demain",
         "Cette semaine",
         "Ce week-end",
