@@ -18,9 +18,9 @@
 
 body {
   background-color: #edf1f5;
-  background-image: url("/layers/layer-group.png"), url("/layers/oval.png");
-  background-position: 100% 0%, -20% 40%;
-  background-size: 100%, 60%;
+  background-image: url("/layers/layer-group.png");
+  background-position: center top;
+  background-size: 100%;
   background-repeat: no-repeat;
   overflow-x: hidden;
   /* background-blend-mode: overlay; */
@@ -29,5 +29,38 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.brand-box {
+  width: 300px;
+  height: 142px;
+}
+
+.brand-box-mobile {
+  display: none;
+}
+
+.nav-container {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1350px) {
+  .brand-box {
+    width: 250px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .brand-box {
+    display: none;
+  }
+  .brand-box-mobile {
+    display: block;
+  }
+  .nav-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
   }
 }
