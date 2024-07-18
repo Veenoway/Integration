@@ -60,7 +60,7 @@ export const Main = () => {
         }}
       >
         <h1
-          className="font-bold lg:text-[60px] md:text-[55px] sm:text-[50px] text-[45px] w-[90%] leading-[58px] text-center text-font-100"
+          className="font-bold lg:text-[60px] md:text-[55px] sm:text-[50px] md:mb-5 text-[45px] w-[90%] leading-[58px] text-center text-font-100"
           style={{
             textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
           }}
@@ -99,10 +99,10 @@ export const Main = () => {
                       else handleActive(i + 1);
                     }}
                   >
-                    <p className="text-[#919191] text-sm sm:text-base lg:text-[17px]">
+                    <p className="text-font-50 text-sm sm:text-base lg:text-[17px]">
                       {item.title}
                     </p>
-                    <TiArrowSortedDown className="text-[#919191] text-sm sm:text-sm lg:text-[17px] w-[14px] md:w-[17px]" />
+                    <TiArrowSortedDown className="text-font-50 text-sm sm:text-sm lg:text-[17px] w-[14px] md:w-[17px]" />
                   </div>
                   <div className="flex flex-col">
                     {item.choices.map((choice, j) => (
@@ -126,7 +126,7 @@ export const Main = () => {
                             } transition-opacity duration-150 ease-linear text-[#1CA5DD] text-xs sm:text-sm lg:text-base`}
                           />
                         </div>
-                        <p className="text-[#919191] text-sm sm:text-base lg:text-[17px]">
+                        <p className="text-font-50 text-sm sm:text-base lg:text-[17px]">
                           {choice}{" "}
                         </p>
                       </div>

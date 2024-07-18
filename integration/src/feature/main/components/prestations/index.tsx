@@ -35,7 +35,7 @@ export const Prestations = () => {
             d’espaces de bains, soins et sèches variés.
           </p>
         </div>
-        <div className="flex overflow-x-scroll lg:w-auto w-full">
+        <div className="flex overflow-x-scroll lg:w-auto py-[30px] md:py-[50px] w-full custom-scrollbar">
           {prestations.map((title, i) => {
             const isHovered = isHover === i + 1;
             return (

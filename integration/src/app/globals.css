@@ -36,7 +36,46 @@ svg {
   height: 100%;
 }
 
-/* Media Query pour les écrans larges (exemple : large écrans) */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 90%;
+  background: #eff3f6;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:horizontal {
+  background: #1ca5dd;
+  border-radius: 20px;
+  width: 200px;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 2210px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:horizontal {
+    display: none;
+  }
+}
+
+.brand-box {
+  width: 300px;
+  height: 142px;
+}
+
+.brand-box-mobile {
+  display: none;
+}
+
+.nav-container {
+  margin-left: auto;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 @media (max-width: 1224px) {
   .responsive-svg {
     width: 566px;
@@ -55,47 +94,6 @@ svg {
     width: 326px;
     height: 250px;
   }
-}
-
-.departement {
-  fill: white;
-  stroke: black;
-  stroke-width: 1;
-  transition: fill 0.3s;
-}
-
-.departement:hover {
-  fill: red;
-}
-
-.tooltip {
-  position: absolute;
-  background-color: black;
-  color: white;
-  padding: 5px;
-  border-radius: 3px;
-  display: none;
-  pointer-events: none;
-  font-size: 12px;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-.brand-box {
-  width: 300px;
-  height: 142px;
-}
-
-.brand-box-mobile {
-  display: none;
-}
-
-.nav-container {
-  margin-left: auto;
 }
 
 @media screen and (max-width: 1350px) {

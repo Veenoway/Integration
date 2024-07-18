@@ -16,21 +16,21 @@ export const Header = () => {
       {/* // MOBILE */}
       <div
         className={`${
-          isMenuActive ? "left-0" : "-left-full"
-        } fixed top-0 h-screen w-screen bg-white transition-all duration-200 ease-in-out z-50 flex flex-col p-5`}
+          isMenuActive ? "left-0" : "-left-full opacity-0"
+        } fixed top-0 h-screen w-[300px] bg-white transition-all duration-200 ease-in-out flex flex-col p-5 z-[101]`}
       >
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center">
             <img src="/logo.png" alt="website logo" />
             <div className="ml-2.5">
-              <p className="text-lg text-[#8B3798] font-bold">Le portail</p>
-              <p className="text-lg text-[#8B3798] font-bold -mt-1.5">
+              <p className="text-base text-purple font-bold">Le portail</p>
+              <p className="text-base text-purple font-bold -mt-1.5">
                 du bien-être
               </p>{" "}
             </div>
           </div>
           <button onClick={() => setIsMenuActive((prev) => !prev)}>
-            <IoClose className="text-4xl md:text-2xl" />
+            <IoClose className="text-3xl md:text-2xl" />
           </button>
         </div>
         <Link href="/">
@@ -56,23 +56,21 @@ export const Header = () => {
             Qui somme nous?
           </p>
         </Link>
-        <div className="flex items-center mt-8">
-          <button className="w-[50%] rounded bg-[#1CA5DD] flex items-center justify-center h-[57px]">
-            <Link href="/">
-              <p className={cn(linkStyle, "ml-0 leading-5")}>
-                Trouver une structure
-              </p>
-            </Link>
-          </button>
-          <button className="w-[50%] rounded bg-[#1CA5DD] flex items-center justify-center h-[57px] ml-5">
-            <Link href="/">
-              <p className={cn(linkStyle, "ml-0 leading-5")}>
-                Réservez un soin
-              </p>
-            </Link>
-          </button>
-        </div>
-        <button className="w-full rounded bg-[#710D82] items-center justify-center h-[57px] mt-5 flex">
+        <button className="w-full mt-8 rounded bg-[#1CA5DD] flex items-center justify-center h-[57px]">
+          <Link href="/">
+            <p className={cn(linkStyle, "ml-0 leading-5 text-sm md:text-base")}>
+              Trouver une structure
+            </p>
+          </Link>
+        </button>
+        <button className="w-full cursor-pointer rounded bg-[#1CA5DD] flex items-center justify-center h-[57px] my-2.5">
+          <Link href="/">
+            <p className={cn(linkStyle, "ml-0 leading-5 text-sm md:text-base")}>
+              Réservez un soin
+            </p>
+          </Link>
+        </button>
+        <button className="w-full rounded bg-dark-purple items-center justify-center h-[57px]  flex">
           <Link href="/">
             <p className="text-sm md:text-base text-white font-medium text-center">
               Mon Espace
@@ -80,18 +78,27 @@ export const Header = () => {
           </Link>
         </button>
       </div>
+      <div
+        onClick={() => setIsMenuActive((prev) => !prev)}
+        className={`fixed top-0 left-0 w-screen h-screen bg-black z-[100]  transition-all duration-100 ease-linear ${
+          isMenuActive ? "opacity-40" : "opacity-0 pointer-events-none"
+        }`}
+      />
       {/* // DESKTOP */}
       <div className="brand-box w-full flex items-center justify-center rounded-br-[50px] shadow-2xl absolute top-0 left-0 bg-white">
         <img src="/logo.png" alt="website logo" />
         <div className="ml-2.5">
-          <p className="text-lg text-[#8B3798] font-bold">Le portail</p>
-          <p className="text-lg text-[#8B3798] font-bold -mt-1.5">
+          <p className="text-lg text-purple font-bold">Le portail</p>
+          <p className="text-lg text-purple font-bold -mt-1.5">
             du bien-être
           </p>{" "}
         </div>
       </div>
       <div className="h-[40px] w-full bg-white flex items-center justify-between lg:justify-end px-5">
-        <button onClick={() => setIsMenuActive((prev) => !prev)}>
+        <button
+          className="flex lg:hidden"
+          onClick={() => setIsMenuActive((prev) => !prev)}
+        >
           <IoMenu className="text-xl md:text-2xl" />
         </button>
         <div className="h-full flex items-center ">
@@ -102,10 +109,10 @@ export const Header = () => {
             <FaPhone className="text-base md:text-lg" />
           </Link>
           <Link href="/">
-            <p className="text-sm text-[#919191] uppercase">Actualités</p>
+            <p className="text-sm text-font-50 uppercase">Actualités</p>
           </Link>
           <Link href="/">
-            <p className="text-sm ml-5 text-[#919191] uppercase">Mon espace</p>
+            <p className="text-sm ml-5 text-font-50 uppercase">Mon espace</p>
           </Link>
         </div>
       </div>
@@ -128,7 +135,7 @@ export const Header = () => {
         <Link href="/">
           <p className={linkStyle}>Qui somme nous?</p>
         </Link>
-        <button className="w-[150px] rounded bg-[#710D82] flex items-center justify-center h-[57px] mx-5">
+        <button className="w-[150px] rounded bg-dark-purple flex items-center justify-center h-[57px] mx-5">
           <Link href="/">
             <p className={cn(linkStyle, "ml-0 leading-5")}>
               Trouver une structure

@@ -28,8 +28,8 @@ export const Actuality = () => {
               className="lg:w-1/3 md:w-[45%] w-full flex flex-col my-5 md:mx-2.5 lg:my-0 lg:mx-0"
             >
               <img
-                className={`md:h-[337px] h-[250px] object-cover md:rounded-none rounded-md ${
-                  isHovered ? "scale-105" : ""
+                className={`md:h-[337px] h-[250px] object-cover  rounded-md ${
+                  isHovered ? "" : ""
                 } transition-transform duration-200 ease-linear `}
                 src={`/actuality/${i}.png`}
                 alt={`image actuality numéro ${i + 1}`}
@@ -54,9 +54,11 @@ export const Actuality = () => {
       </div>
       <div className="flex items-center mt-[60px] w-full">
         <div className="h-[1px] w-full bg-font-100" />
-        <p className="text-font-100 text-[13px] lg:text-[15px] mx-5 uppercase whitespace-nowrap ">
-          Voir toutes les actualités +
-        </p>
+        <Link href="" target="_blank" rel="noopener noreferrer">
+          <p className="text-font-100 text-[13px] lg:text-[15px] mx-5 uppercase whitespace-nowrap ">
+            Voir toutes les actualités +
+          </p>
+        </Link>
         <div className="h-[1px] w-[10%] bg-font-100" />
       </div>
     </div>

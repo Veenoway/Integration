@@ -17,7 +17,7 @@ export const Contact = ({ className = "" }: ContactProps) => {
               <FaPhone className="text-lg md:text-xl w-[18px] md:w-[20px]" />
               <p className="lg:text-xl md:text-lg sm:text-base text-xs text-font-black ml-2.5 uppercase font-medium">
                 04 78 78 78 78
-              </p>{" "}
+              </p>
             </span>
           </Link>
         </div>
@@ -28,7 +28,7 @@ export const Contact = ({ className = "" }: ContactProps) => {
               <FiMail className="text-xl md:text-2xl w-[20px] md:w-[24px]" />
               <p className="lg:text-xl md:text-lg sm:text-base text-xs text-font-black ml-2.5 uppercase font-medium">
                 Nous contacter
-              </p>{" "}
+              </p>
             </span>
           </Link>
         </div>
