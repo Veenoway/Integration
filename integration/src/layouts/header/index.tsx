@@ -102,10 +102,10 @@ export const Header = () => {
           <IoMenu className="text-xl md:text-2xl" />
         </button>
         <div className="h-full flex items-center ">
-          <Link href="/">
+          <Link href="mailto:m.bluth@example.com">
             <FiMail className="text-xl md:text-2xl" />
           </Link>
-          <Link href="/" className="mx-5">
+          <Link href="tel:0478787878" className="mx-5">
             <FaPhone className="text-base md:text-lg" />
           </Link>
           <Link href="/">
