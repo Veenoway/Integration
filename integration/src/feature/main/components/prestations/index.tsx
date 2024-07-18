@@ -23,7 +23,10 @@ export const Prestations = () => {
     <div className="w-full bg-white py-[80px] md:py-[100px] lg:py-[150px] flex-col flex">
       <div className="flex lg:flex-row flex-col items-center">
         <div className="flex flex-col lg:px-[80px] items-center lg:mb-0 mb-10">
-          <p className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] text-font-black font-medium max-w-[550px] w-[90%] min-w-[280px] leading-10 mb-5">
+          <p
+            className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] text-center lg:text-start text-font-black
+           font-medium max-w-[550px] w-[90%] min-w-[280px] leading-10 mb-5"
+          >
             Nos prestations
           </p>
           <p className="text-sm sm:text-[16px] lg:text-[17px] text-font-black text-center lg:text-start max-w-[550px] w-[90%] lg:min-w-[280px] leading-7 ">
