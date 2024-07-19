@@ -32,3 +32,29 @@ export const positionMarker = [
   "top-[18%] left-[72%]",
   "top-[18%] left-[55%]", //
 ];
+
+export const activitys = [
+  {
+    title: "Département",
+    choices: ["Puy-de-Dôme", "Allier", "Cantal", "Haute-Loire", "Rhône"],
+  },
+  {
+    title: "Prestations",
+    choices: [
+      "Bains intérieurs",
+      "Bains extérieurs",
+      "Sauna & Hammam",
+      "Soins du visage",
+    ],
+  },
+  {
+    title: "Disponibilité",
+    choices: [
+      "Aujourdhui",
+      "Demain",
+      "Cette semaine",
+      "Ce week-end",
+      "Prochainement",
+    ],
+  },
+];

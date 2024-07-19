@@ -1,5 +1,5 @@
 export const Carte = () => (
-  <div className="relative mr-10">
+  <div className="relative lg:mr-10">
     <svg
       width="636"
       height="490"

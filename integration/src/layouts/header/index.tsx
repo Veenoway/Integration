@@ -8,7 +8,7 @@ import { IoClose, IoMenu } from "react-icons/io5";
 
 export const Header = () => {
   const linkStyle =
-    "text-base text-white font-medium ml-5 max-w-[120px] text-center";
+    "text-base text-white font-medium ml-8 max-w-[120px] text-center";
   const linkStyleMobil = "text-base font-medium my-3";
   const [isMenuActive, setIsMenuActive] = useState(false);
   return (

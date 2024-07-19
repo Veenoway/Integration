@@ -20,7 +20,6 @@ body {
   background-color: #edf1f5;
   background-image: url("/layers/layer-group.png");
   background-position: center top;
-  background-size: 100%;
   background-repeat: no-repeat;
   overflow-x: hidden;
   /* background-blend-mode: overlay; */
@@ -48,15 +47,6 @@ svg {
   max-width: 200px;
 }
 
-@media screen and (min-width: 2210px) {
-  .custom-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb:horizontal {
-    display: none;
-  }
-}
-
 .brand-box {
   width: 300px;
   height: 142px;
@@ -76,33 +66,36 @@ svg {
   }
 }
 
-@media (max-width: 1224px) {
-  .responsive-svg {
-    width: 566px;
-    height: 420px;
+/*  MEDIA QUERIES */
+
+@media screen and (min-width: 2210px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:horizontal {
+    display: none;
   }
 }
 
-@media (max-width: 640px) {
-  .responsive-svg {
-    width: 476px;
-    height: 350px;
+@media screen and (max-width: 768px) {
+  body {
+    background-position: center top;
   }
-}
-@media (max-width: 530px) {
-  .responsive-svg {
-    width: 326px;
-    height: 250px;
+  svg {
+    width: 100%;
+    height: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1420px) {
   .brand-box {
     width: 250px;
     height: 120px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1360px) {
   .brand-box {
     display: none;
   }

@@ -2,10 +2,10 @@ export const Partners = () => {
   const images = Array.from({ length: 5 }, (_, i) => `/partners/${i}.png`);
   return (
     <div
-      className="flex-col flex justify-center items-center pt-[100px] md:pt-[150px] lg:pt-[200px] pb-[200px] 
-      md:pb-[250px] lg:pb-[300px] bg-white bg-[url('/layers/oval-footer.png')] bg-[60%] bg-right-bottom bg-no-repeat"
+      className="flex-col flex justify-center items-center pt-[50px] sm:pt-[100px] md:pt-[150px] lg:pt-[200px] pb-[200px] 
+      md:pb-[250px] lg:pb-[300px] bg-white bg-[url('/layers/oval-footer.png')] bg-right-ovale-m md:bg-right-ovale-d bg-no-repeat"
     >
-      <p className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] text-font-black font-medium max-w-[800px] leading-10 mb-[60px]">
+      <p className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] text-font-black font-medium max-w-[800px] leading-10 mb-[10px] md:mb-[50px]">
         Nos Partenaires
       </p>
       <div className="flex items-center flex-wrap justify-center max-w-[1300px] w-[90%]">

@@ -25,6 +25,13 @@ const config: Config = {
         "dark-purple": "#710D82",
         purple: "#8B3798",
       },
+      backgroundPosition: {
+        "left-ovale-d": "-100px 400px",
+        "left-ovale-m": "-150px 600px",
+        "right-ovale-d": "right bottom",
+        "right-ovale-m": "200px 100px",
+        // You can add more custom values here if needed
+      },
     },
   },
   plugins: [],
