@@ -20,17 +20,18 @@ export const items: { title: string; url: string }[] = [
 ];
 
 export const positionMarker = [
-  "top-[27%] left-[44%]", //
+  "top-[24%] left-[45%]", //
   "top-[10%] left-[22%]", //
   "top-[31%] left-[19%]", //
   "top-[52%] left-[12%]", //
   "top-[52%] left-[30%]", //
   "top-[65%] left-[40%]", //
   "top-[64%] left-[53%]", //
-  "top-[45%] left-[60%]", //
-  "top-[37%] left-[73%]",
-  "top-[18%] left-[72%]",
-  "top-[18%] left-[55%]", //
+  "top-[45%] left-[56%]", //
+  "top-[37%] left-[80%]",
+  "top-[18%] left-[76%]",
+  "top-[18%] left-[58%]", //
+  // 45 24
 ];
 
 export const activitys = [
