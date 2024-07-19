@@ -35,6 +35,30 @@ svg {
   height: 100%;
 }
 
+.responsive-blue-box {
+  width: 80%;
+  max-width: 960px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1270px) {
+  .responsive-blue-box {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+@media screen and(min-width: 640px) {
+  .responsive-blue-box {
+    width: fit-content;
+    max-width: 960px;
+  }
+}
+@media screen and(min-width: 0px) {
+  .responsive-blue-box {
+    width: 100%;
+  }
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   height: 4px;
   width: 90%;

@@ -40,7 +40,7 @@ export const Main = () => {
           Le portail dU bien-être des centres en Auvergne-Rhône-Alpes
         </p>
         <div className="flex items-center lg:flex-row flex-col relative max-w-[1200px] w-[90%] mt-[50px] lg:mt-[100px]">
-          <div className="flex flex-col mx-auto lg:mx-0 rounded-md bg-font-100 shadow-xl w-[90%] sm:w-[360px] lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 ">
+          <div className="flex flex-col mx-auto lg:mx-0 rounded-md bg-font-100 shadow-xl lg:absolute lg:left-0 sm:w-[360px] w-fit lg:top-1/2 lg:-translate-y-1/2 z-[50]">
             <h2 className="p-6 lg:p-10 text-font-black text-center lg:text-[23px] sm:text-lg md: text-base font-medium">
               Trouvez un centre près de chez vous!
             </h2>
@@ -106,8 +106,8 @@ export const Main = () => {
             </button>
           </div>
 
-          <div className="w-full sm:w-fit mx-auto lg:w-full max-w-[960px] lg:mt-0 mt-10 ml-auto h-fit lg:h-[580px] rounded-md from-[#4DA2D8] to-[#87ADDB] bg-gradient-to-r lg:flex items-center lg:justify-end justify-center">
-            <div className="w-fit h-fit relative">
+          <div className="mx-auto lg:mt-0 mt-10 h-fit lg:h-[580px] rounded-md lg:from-[#4DA2D8] lg:to-[#87ADDB] bg-gradient-to-r lg:flex items-center lg:justify-end justify-center responsive-blue-box">
+            <div className="w-full sm:w-fit h-fit relative mr-auto lg:my-0 lg:ml-0 lg:mr-10">
               <Carte />
               {positionMarker.map((pos, i) => (
                 <div
