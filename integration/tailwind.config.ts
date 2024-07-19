@@ -13,7 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-actuality":
-          "linear-gradient(90deg, #88acda 0%, #9c92ca 100%)",
+          "url('/layers/oval-actu.png'), linear-gradient(90deg, #88acda 0%, #9c92ca 100%)",
       },
       colors: {
         font: {
@@ -30,6 +30,7 @@ const config: Config = {
         "left-ovale-m": "-150px 600px",
         "right-ovale-d": "right bottom",
         "right-ovale-m": "200px 100px",
+        "ovale-rt": "right top",
         // You can add more custom values here if needed
       },
     },

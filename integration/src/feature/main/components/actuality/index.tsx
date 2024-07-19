@@ -15,7 +15,7 @@ export const Actuality = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-actuality py-[100px] md:py-[150px] lg:py-[200px] flex-col flex items-center">
+    <div className="w-full bg-gradient-actuality bg-no-repeat bg-ovale-rt py-[100px] md:py-[150px] lg:py-[200px] flex-col flex items-center ">
       <h1 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] text-center text-font-100 font-medium max-w-[800px] w-[90%]">
         L’actualité de nos centres de bien-être en région Auvergne-Rhône-Alpes
       </h1>
