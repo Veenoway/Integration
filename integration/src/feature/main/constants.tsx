@@ -27,7 +27,7 @@ export const positionMarker = [
   "top-[52%] left-[30%]", //
   "top-[65%] left-[40%]", //
   "top-[64%] left-[53%]", //
-  "top-[45%] left-[56%]", //
+  "top-[45%] left-[65%]", //
   "top-[37%] left-[80%]",
   "top-[18%] left-[76%]",
   "top-[18%] left-[58%]", //
